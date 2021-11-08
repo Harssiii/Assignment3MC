@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment3_emissionPoints">
         <activity
+            android:name=".McqScreen"
+            android:exported="true" />
+        <activity
             android:name=".StartPage"
             android:exported="true" />
         <activity
