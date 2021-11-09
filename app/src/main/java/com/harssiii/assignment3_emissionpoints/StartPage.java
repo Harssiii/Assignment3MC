@@ -1,11 +1,11 @@
 package com.harssiii.assignment3_emissionpoints;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class StartPage extends AppCompatActivity {
 
@@ -18,12 +18,10 @@ public class StartPage extends AppCompatActivity {
     }
     public void startQuiz(View view) {
         Intent intent = new Intent(this, McqScreen.class);
-        EditText editText = (EditText) findViewById(R.id.PersonName);
-        EditText editText2 = (EditText) findViewById(R.id.EmailAddress);
+        EditText editText = findViewById(R.id.PersonName);
         String message = editText.getText().toString();
-        String message2 = editText2.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
-        intent.putExtra(EXTRA_MESSAGE, message2);
         startActivity(intent);
     }
+
 }

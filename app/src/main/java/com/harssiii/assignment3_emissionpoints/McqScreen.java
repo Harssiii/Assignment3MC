@@ -12,13 +12,16 @@ public class McqScreen<message> extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mcq_screen);
-    }
-    // Get the Intent that started this activity and extract the string
-    Intent intent = getIntent();
-    String message = intent.getStringExtra(StartPage.EXTRA_MESSAGE);
-    String message2 = intent.getStringExtra(StartPage.EXTRA_MESSAGE);
 
-    // Capture the layout's TextView and set the string as its text
-    TextView textView2 = findViewById(R.id.textView2);
-//    textView2.setText(message)
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(StartPage.EXTRA_MESSAGE);
+
+
+        // Capture the layout's TextView and set the string as its text
+        TextView textView3 = findViewById(R.id.textView3);
+        textView3.setText(message);
+
+    }
+
 }
