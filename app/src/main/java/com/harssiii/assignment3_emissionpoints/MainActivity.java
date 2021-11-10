@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     public void startapp(View view) {
         Intent intent = new Intent(this, StartPage.class);
         startActivity(intent);

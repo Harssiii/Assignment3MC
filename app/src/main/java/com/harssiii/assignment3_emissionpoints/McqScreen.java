@@ -14,13 +14,15 @@ public class McqScreen<message> extends AppCompatActivity {
         setContentView(R.layout.activity_mcq_screen);
 
         // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(StartPage.EXTRA_MESSAGE);
+        String name = getIntent().getStringExtra("name");
+        String roll = getIntent().getStringExtra("roll");
 
 
         // Capture the layout's TextView and set the string as its text
         TextView textView3 = findViewById(R.id.textView3);
-        textView3.setText(message);
+        textView3.setText(name);
+        TextView textView4 = findViewById(R.id.textView4);
+        textView4.setText(roll);
 
     }
 
